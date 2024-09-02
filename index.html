@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="new-post-container">
+        <h2>Новый пост</h2>
+        <input id="title-input" type="text" placeholder="Заголовок" />
+        <input id="description-input" type="text" placeholder="Текст поста" />
+        <button id="add-post-btn">Добавить</button>
+      </div>
+
+      <div class="render-posts-container">
+        <h2>Лента</h2>
+        <div id="posts">
+          <div class="post">
+            <p class="post-time">дата</p>
+            <p class="post-title">заголовок</p>
+            <p class="post-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam iusto accusantium commodi temporibus esse, sint
+              repellendus consectetur numquam aliquam delectus corporis ea saepe
+              tempora eaque! Rerum minus tempora non rem.
+            </p>
+          </div>
+          <div class="post">
+            <p class="post-time">дата</p>
+            <p class="post-title">заголовок</p>
+            <p class="post-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laboriosam iusto accusantium commodi temporibus esse, sint
+              repellendus consectetur numquam aliquam delectus corporis ea saepe
+              tempora eaque! Rerum minus tempora non rem.
+            </p>
+          </div>
+        </div>
+        <p id="error"></p>
+      </div>
+
+      <script src="model.js"></script>
+      <script src="view.js"></script>
+      <script src="controller.js"></script>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
